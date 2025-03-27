@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>HEMATEJA's Portfolio</title>
+    <link rel="icon" href="a.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+
+<body>
+    <!-- Home Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- Replace 'images/cover.png' with your logo image path -->
+                <img src="b.jpg" class="logo" width="100px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="Section-Photo/photography.html">Photographs</a></li>
+                    <li><a href="#Achievements">Achievements</a></li>
+                    <li><a href="#contactme">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <div class="loader animate__animated animate__slideInDown">
+                    <div class="snow">
+                        <span style="--i:11"></span>
+                        <span style="--i:12"></span>
+                        <span style="--i:15"></span>
+                        <span style="--i:17"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                    </div>
+                </div>
+                <div class="loaader animate__animated animate__slideInDown">
+                    <div class="snow">
+                        <span style="--i:11"></span>
+                        <span style="--i:12"></span>
+                        <span style="--i:15"></span>
+                        <span style="--i:17"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:14"></span>
+                        <span style="--i:19"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:10"></span>
+                    </div>
+                </div>
+                <div class="setdiv animate__animated animate__slideInUp">
+                    <div class="intro-container">
+                        <!-- Photo Section on the Left -->
+                        <div class="intro-photo">
+                            <div class="hex-frame">
+                                <img src="f.jpg" alt="Kasanagottu Hemateja">
+                            </div>
+                        </div>
+                        <!-- Text Section on the Right -->
+                        <div class="intro-text">
+                            <h2>Hi, I'm <br></h2>
+                            <h1><span>KASANAGOTTU HEMATEJA</span></h1>
+                            <p>Student🧑‍💻 - Software Engineer💻 - Photographer📸</p>
+                            <div class="wrapper">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="shadow"></div>
+                                <div class="shadow"></div>
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Replace with your CV link -->
+            <div class="notification" onclick="window.location.href = 'YOUR_CV_LINK_HERE';">
+                <p>Would you like to check my CV? 😊</p>
+                <span class="notification__progress"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="Section-Home/menu.js"></script>
+
+    <!-- Scroll to Top -->
+    <div id="progress">
+        <span id="progress-value" class="gotoTop">
+            <?xml version="1.0" ?>
+            <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M128.4,189.3L233.4,89c5.8-6,13.7-9,22.4-9c8.7,0,16.5,3,22.4,9l105.4,100.3c12.5,11.9,12.5,31.3,0,43.2  c-12.5,11.9-32.7,11.9-45.2,0L288,184.4v217c0,16.9-14.3,30.6-32,30.6c-17.7,0-32-13.7-32-30.6v-217l-50.4,48.2  c-12.5,11.9-32.7,11.9-45.2,0C115.9,220.6,115.9,201.3,128.4,189.3z" />
+            </svg>
+        </span>
+    </div>
+    <script src="Section-Home/Scroll-Top.js"></script>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="containers">
+            <div class="row">
+                <div class="col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="sub-line">
+                        <p>
+                            <!-- Edit your major, university, and other details here -->
+                            I am currently studying B.TECH at ANURAG UNIVERSITY. Besides, I am a <b>Software Developer💻</b> with a passion for coding and problem solving. I also love <b>Photography📸</b> as a creative outlet and capturing the world around me.
+                        </p>
+                    </div>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('others')">Others</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Competitive Programming: <br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white">
+                                    <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+                                    <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>App Development: <br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
+                                    <img src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white">
+                                    <img src="https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Web Development: <br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
+                                    <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+                                    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+                                </div>
+                            </li>
+                            <li><span>Graphic & UI/UX Designing: <br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white">
+                                    <img src="https://img.shields.io/badge/Adobe%20Lightroom-31A8FF?style=for-the-badge&logo=Adobe%20Lightroom&logoColor=white">
+                                    <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Collaboration: <br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
+                                    <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
+                                    <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="others">
+                        <ul>
+                            <li><span>Game Development: <br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+                                    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
+                                    <img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Software Development: <br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+                                    <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Database Management: <br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white">
+                                    <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white">
+                                    <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Office Management: <br></span>
+                                <div class="space1">
+                                    <img src="https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white">
+                                    <img src="https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"><br>
+                                    <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white">
+                                    <img src="https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <!-- Edit your education details here -->
+                            <li><span class="Education"><b>B.TECH</b></span><br>
+                                <p>ANURAG UNIVERSITY</p>
+                                <p align="left">2022-2026<span class="cg">8.5</span></p>
+                            </li><br>
+                            <li><span class="Education"><b>ALPHORES</b></span><br>
+                                <p>ALPHORES</p>
+                                <p align="left">2020-2021 <span class="cgs">79%</span></p>
+                            </li><br>
+                            <li><span class="Education"><b>SSC</b></span><br>
+                                <p>ALPHORES</p>
+                                <p align="left">2018-2019<span class="cgs">10</span></p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <!-- Edit your experience details here -->
+                            <li><span class="Education"><b>1year Experience</b></span><br>
+                                <p>Check Out My CV</p>
+                                <!-- Replace with your CV link -->
+                                <button class="button" onclick="window.location.href = 'YOUR_CV_LINK_HERE';">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">Download Now</span>
+                                    </span>
+                                </button>
+                            </li><br>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <!-- Replace with your about section image path -->
+                    <img src="a.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- Skills Section -->
+    <h1 class="h1s">My Skills</h1>
+    <br>
+    <div class="process-wrapperd">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01 active">
+                    <div class="step-inner">Frontend Development</div>
+                </li>
+                <li class="step step02">
+                    <div class="step-inner">App Development</div>
+                </li>
+                <li class="step step03">
+                    <div class="step-inner">Language</div>
+                </li>
+                <li class="step step04">
+                    <div class="step-inner">Backend Development</div>
+                </li>
+                <li class="step step05">
+                    <div class="step-inner">Others</div>
+                </li>
+            </ul>
+            <div id="line">
+                <div id="line-progress"></div>
+            </div>
+        </div>
+
+        <div id="progress-content-section">
+            <div class="section-content discovery active">
+                <div class="skills">
+                    <div class="wrapperd">
+                        <div class="carded">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">HTML & CSS</div>
+                        </div>
+                        <div class="carded js">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">JavaScript</div>
+                        </div>
+                        <div class="carded react">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">React</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Frontend Web Development Skills</h2>
+            </div>
+
+            <div class="section-content strategy">
+                <div class="skills">
+                    <div class="wrapperd">
+                        <div class="carded java">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Java & Kotlin</div>
+                        </div>
+                        <div class="carded as">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Android Studio</div>
+                        </div>
+                        <div class="carded firebase">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Firebase</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>App Development Skills</h2>
+            </div>
+
+            <div class="section-content creative">
+                <div class="skills">
+                    <div class="wrapperd">
+                        <div class="carded cc">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">C & C++</div>
+                        </div>
+                        <div class="carded python">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Python</div>
+                        </div>
+                        <div class="carded java">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Java & Kotlin</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Programming Languages</h2>
+            </div>
+
+            <div class="section-content production">
+                <div class="skills">
+                    <div class="wrapperd">
+                        <div class="carded node">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">NodeJs</div>
+                        </div>
+                        <div class="carded sql">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">MySQL</div>
+                        </div>
+                        <div class="carded php">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">PHP</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Backend Web Development Skills</h2>
+            </div>
+
+            <div class="section-content analysis">
+                <div class="skills">
+                    <div class="wrapperd">
+                        <div class="carded git">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Git & GitHub</div>
+                        </div>
+                        <div class="carded figma">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Figma & UI/UX Design</div>
+                        </div>
+                        <div class="carded canva">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Canva & Photo Editing</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Designing and Collaboration Skills</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let optionse = {
+            startAngle: -1.55,
+            size: 150,
+            value: 0.95,
+            fill: { gradient: ["#ff00ff", "#00ffff"] },
+        };
+        $(".circled .bar")
+            .circleProgress(optionse)
+            .on("circle-animation-progress", function (event, progress, stepValue) {
+                $(this)
+                    .parent()
+                    .find("span")
+                    .text(String(stepValue.toFixed(2).substr(2)) + "%");
+            });
+        $(".js .bar").circleProgress({
+            value: 0.86,
+        });
+        $(".react .bar").circleProgress({
+            value: 0.75,
+        });
+        $(".java .bar").circleProgress({
+            value: 0.92,
+        });
+        $(".as .bar").circleProgress({
+            value: 0.88,
+        });
+        $(".firebase .bar").circleProgress({
+            value: 0.82,
+        });
+        $(".cc .bar").circleProgress({
+            value: 0.98,
+        });
+        $(".python .bar").circleProgress({
+            value: 0.84,
+        });
+        $(".node .bar").circleProgress({
+            value: 0.95,
+        });
+        $(".sql .bar").circleProgress({
+            value: 0.84,
+        });
+        $(".php .bar").circleProgress({
+            value: 0.78,
+        });
+        $(".git .bar").circleProgress({
+            value: 0.93,
+        });
+        $(".canva .bar").circleProgress({
+            value: 0.89,
+        });
+        $(".figma .bar").circleProgress({
+            value: 0.84,
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(".step").click(function () {
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+        });
+
+        $(".step01").click(function () {
+            $("#line-progress").css("width", "3%");
+            $(".discovery").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step02").click(function () {
+            $("#line-progress").css("width", "25%");
+            $(".strategy").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step03").click(function () {
+            $("#line-progress").css("width", "50%");
+            $(".creative").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step04").click(function () {
+            $("#line-progress").css("width", "75%");
+            $(".production").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step05").click(function () {
+            $("#line-progress").css("width", "100%");
+            $(".analysis").addClass("active").siblings().removeClass("active");
+        });
+    </script>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="containers">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="service-list">
+                <div>
+                    <!-- Replace with your project link -->
+                    <div class="card" onclick="window.location.href = 'https://sweetheart-phi.vercel.app/';">
+                        <div class="card9">
+                            <div class="position">
+                                <!-- Replace with your project image path -->
+                                <img align="center" class="icon" src="m.png" width="190">
+                                <!-- Edit project details here -->
+                                <span class="p_hcolor">ONLINE RESTARUNT WEBSITE</span>
+                                <p>IT IS AN ONLINE RESTARUNT WEBSITE WHERE WE CAN BOOK THE TABLE AND ORDER THE FOOD TO THE DOOR STEP 
+                                    IT IS MORE COMPATABLE AND FLEXIBLE TO USE.
+                                </p>
+                                <p>
+                                    <b><span class="p_color">Language:</span></b> HTML,CSS,JAVA <br>
+                                    <b><span class="p_color">Framework:</span></b> JAVASCRIPT <br>
+                                    <b><span class="p_color">Environment:</span></b> VS CODE <br>
+                                </p>
+                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Photographs Section -->
+    <div id="projects">
+        <div id="photographs">
+            <h1 class="sub-project">Photography</h1>
+            <div class="pos_Set">
+                <!-- Replace with your Instagram link -->
+                <div class="slider" onclick="window.location.href ='https://www.instagram.com/1hemanth_007?igsh=Mmg3MWh3ZW9hbDdy';">
+                    <!-- Replace with your photo paths -->
+                    <span style="--i:1;"><img class="scales" src="e.jpg"></span>
+                    <span style="--i:2;"><img class="scales" src="g.jpg"></span>
+                    <span style="--i:2;"><img class="scales" src="f.jpg"></span>
+                    <span style="--i:2;"><img class="scales" src="h.jpg"></span>
+                    <span style="--i:2;"><img class="scales" src="d.jpg"></span>
+                    <!-- Add more photos as needed -->
+                </div>
+            </div>
+            <div class="service-lists follow">
+                <button class="button buttonSet" onclick="window.location.href = 'Section-Photo/photography.html';">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Load More</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements Section -->
+    <div id="Achievements">
+        <h1 class="sub-projects">Achievements</h1>
+        <div class="achievement1">
+            <div class="cards">
+                <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                        <!-- Replace with your achievement image path -->
+                        <img src="N.jpg" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <!-- Edit achievement details here -->
+                    <h2 class="name">800+ Problems Solved</h2>
+                    <p class="description">Solved more than 800 problems in various platform
+                        - Newbie - Codeforces 
+                        - 3 Star - CodeChef 
+                        - Problem solved in LeetCode
+                         -5 star - Hacker Rank</p>
+                    <!-- Replace with your achievement link -->
+                    <button class="button" onclick="window.location.href = '';">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">read more</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!-- Add more achievement cards as needed -->
+        </div>
+    </div>
+
+    <!-- Contact Me Section -->
+    <div id="contactme">
+        <section class="contact">
+            <div class="contact-form">
+                <h1>Contact <span class="us">Me</span></h1>
+                <!-- Edit your contact details here -->
+                <p>I am available for work. Connect with me via phone: +91 9346022735 or email:kasanagottuhemateja@gmail.com</p>
+                <form action="https://formspree.io/f/mknabrlj" method="POST">
+                    <input type="name" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="" placeholder="E-mail" required>
+                    <input type="subject" placeholder="Write a Subject" required>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="contact-img">
+                <!-- Replace with your contact section image path -->
+                <img class="check" src="b.jpg">
+            </div>
+        </section>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="Social">
+        <div class="wrappeer">
+            <!-- Replace with your social media links -->
+            <div class="icon facebook" onclick="window.location.href = 'https://www.facebook.com/share/164j6PNUAi/';">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fab fa-facebook-f"></i></span>
+            </div>
+            <div class="icon instagram" onclick="window.location.href = 'https://www.instagram.com/1hemanth_007?igsh=Mmg3MWh3ZW9hbDdy';">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+            </div>
+            <div class="icon twitter" onclick="window.location.href = 'YOUR_TWITTER_LINK_HERE';">
+                <div class="tooltip">Twitter</div>
+                <span><i class="fab fa-twitter"></i></span>
+            </div>
+            <div class="icon github" onclick="window.location.href = 'https://github.com/kasanagottuhemateja';">
+                <div class="tooltip">GitHub</div>
+                <span><i class="fab fa-github"></i></span>
+            </div>
+            <div class="icon linkedin" onclick="window.location.href = 'https://www.linkedin.com/in/kasanagottu-hemateja-29b52526a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app';">
+                <div class="tooltip">LinkedIn</div>
+                <span><i class="fab fa-linkedin"></i></span>
+            </div>
+            <div class="icon youtube" onclick="window.location.href = 'YOUR_YOUTUBE_LINK_HERE';">
+                <div class="tooltip">YouTube</div>
+                <span><i class="fab fa-youtube"></i></span>
+            </div>
+        </div>
+
+        <div class="cv">
+            <!-- Replace with your CV link -->
+            <button class="button" onclick="window.location.href = 'cv.pdf';">
+                <span class="button_lg">
+                    <span class="button_sl"></span>
+                    <span class="button_text">Download My CV</span>
+                </span>
+            </button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="end">
+        <!-- Edit your name here -->
+        <p>© 2025 KASANAGOTTU HEMATEJA. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
