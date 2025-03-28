@@ -653,3 +653,231 @@ nav ul li a:hover {
         height: 173px; /* Adjusted height for the hexagon */
     }
 }
+
+
+
+
+/* General Mobile Optimizations */
+@media (max-width: 768px) {
+    /* Reduce padding and margins for smaller screens */
+    .container, .containers {
+        padding: 20px;
+    }
+
+    /* Adjust font sizes for better readability */
+    h1 {
+        font-size: 2rem; /* Smaller heading size */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    /* Ensure buttons are touch-friendly */
+    .button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Navigation Bar (Already Responsive, Minor Adjustments) */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px; /* Reduce padding on mobile */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Smaller font size for menu items */
+    }
+}
+
+/* Home Section (Already Responsive, Minor Adjustments) */
+@media (max-width: 768px) {
+    .header-text {
+        padding: 20px;
+    }
+
+    .intro-container {
+        flex-direction: column; /* Stack photo and text vertically */
+        text-align: center;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    .abstract-frame {
+        width: 200px; /* Smaller size for mobile */
+        height: 240px;
+    }
+
+    .setdiv h1 {
+        font-size: 1.8rem; /* Smaller name size */
+    }
+
+    .setdiv h2 {
+        font-size: 1.2rem;
+    }
+
+    .setdiv p {
+        font-size: 0.8rem;
+    }
+}
+
+/* About Section */
+@media (max-width: 768px) {
+    #about .container {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+    }
+
+    #about .col-1, #about .col-2 {
+        flex: none; /* Remove flex grow/shrink */
+        width: 100%; /* Full width on mobile */
+    }
+
+    #about .col-2 img {
+        width: 200px; /* Smaller image size */
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    #about .col-1 p {
+        font-size: 0.9rem;
+    }
+
+    #about .col-1 li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Projects Section */
+@media (max-width: 768px) {
+    #projects .container {
+        flex-direction: column; /* Stack project cards vertically */
+    }
+
+    #projects .col-1, #projects .col-2 {
+        flex: none;
+        width: 100%;
+    }
+
+    #projects .col-2 img {
+        width: 150px; /* Smaller project image */
+        height: 150px;
+    }
+
+    #projects .col-1 p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Photographs Section */
+@media (max-width: 768px) {
+    #photographs .container {
+        padding: 20px;
+    }
+
+    .slider {
+        flex-direction: column; /* Stack photos vertically */
+        align-items: center;
+    }
+
+    .slider span {
+        width: 150px; /* Smaller photo size */
+        height: 150px;
+    }
+
+    .slider span img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+}
+
+/* Photography Gallery (photography.html) */
+@media (max-width: 768px) {
+    #photography-gallery .gallery {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Achievements Section */
+@media (max-width: 768px) {
+    #Achievements .container {
+        flex-direction: column; /* Stack cards vertically */
+    }
+
+    #Achievements .card {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #Achievements .card-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #Achievements .card-body h2 {
+        font-size: 1.2rem;
+    }
+
+    #Achievements .card-body p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Contact Section */
+@media (max-width: 768px) {
+    #contactme .container {
+        flex-direction: column; /* Stack image and form vertically */
+    }
+
+    #contactme .contact-img {
+        flex: none;
+        width: 100%;
+    }
+
+    #contactme .contact-img img {
+        width: 200px; /* Smaller image size */
+        height: 200px;
+    }
+
+    #contactme .contact-form {
+        flex: none;
+        width: 100%;
+    }
+
+    #contactme .contact-form input,
+    #contactme .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    #contactme .contact-form button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+    .end p {
+        font-size: 0.8rem;
+    }
+}
