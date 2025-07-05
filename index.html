@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,9 +36,8 @@
                     <li><a href="Section-Photo/photography.html">Photographs</a></li>
                     <li><a href="#Achievements">Achievements</a></li>
                     <li><a href="#contactme">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
             </nav>
 
             <div class="header-text">
@@ -217,7 +217,7 @@
                             </li>
                             <li><span>Database Management: <br></span>
                                 <div class="space1">
-                                    <img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white">
+                                    <img src="https://img shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white">
                                     <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white">
                                     <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white">
                                 </div>
@@ -653,19 +653,24 @@
         <section class="contact">
             <div class="contact-form">
                 <h1>Contact <span class="us">Me</span></h1>
-                <!-- Edit your contact details here -->
-                <p>I am available for work. Connect with me via phone: +91 9346022735 or email:kasanagottuhemateja@gmail.com</p>
-                <form action="https://formspree.io/f/mknabrlj" method="POST">
-                    <input type="name" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" id="" placeholder="E-mail" required>
-                    <input type="subject" placeholder="Write a Subject" required>
-                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                    <button class="btn">Submit</button>
+                <p>I am available for work. Connect with me via phone: +91 9346022735 or email: kasanagottuhemateja@gmail.com</p>
+                <form id="contact-form" action="https://formsubmit.co/el/vohobo" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Write a Subject" required>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit" class="btn">Submit</button>
+                    <div id="form-message" style="display: none; margin-top: 10px;"></div>
                 </form>
             </div>
             <div class="contact-img">
-                <!-- Replace with your contact section image path -->
-                <img class="check" src="b.jpg">
+                <img class="check" src="b.jpg" alt="Contact section image">
             </div>
         </section>
     </div>
@@ -715,6 +720,59 @@
         <!-- Edit your name here -->
         <p>© 2025 KASANAGOTTU HEMATEJA. All rights reserved.</p>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#contact-form').on('submit', function(e) {
+                e.preventDefault();
+                const form = $(this);
+                const messageDiv = $('#form-message');
+
+                messageDiv
+                    .text('Sending your message...')
+                    .css({
+                        'display': 'block',
+                        'background': 'rgba(0, 0, 0, 0.5)',
+                        'padding': '10px',
+                        'border-radius': '5px'
+                    })
+                    .addClass('loading')
+                    .removeClass('success error');
+
+                $.ajax({
+                    url: form.attr('action'),
+                    method: form.attr('method'),
+                    data: form.serialize(),
+                    dataType: 'json',
+                    success: function(response) {
+                        messageDiv
+                            .text('Thank you! Your message has been sent successfully.')
+                            .css({
+                                'display': 'block',
+                                'background': 'rgba(0, 0, 0, 0.5)',
+                                'padding': '10px',
+                                'border-radius': '5px'
+                            })
+                            .addClass('success')
+                            .removeClass('error loading');
+                        form[0].reset();
+                    },
+                    error: function() {
+                        messageDiv
+                            .text('Oops! Something went wrong. Please try again later.')
+                            .css({
+                                'display': 'block',
+                                'background': 'rgba(0, 0, 0, 0.5)',
+                                'padding': '10px',
+                                'border-radius': '5px'
+                            })
+                            .addClass('error')
+                            .removeClass('success loading');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
